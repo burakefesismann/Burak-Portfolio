@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projeler</title>
+        <link rel="icon" href="resimler/selam-insaat-logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/stil.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="anasayfa.html">Anasayfa</a></li>
+                    <li><a href="hakkimda.html">Hakkımda</a></li>
+                    <li><a href="projelerim.html">Projelerim</a></li>
+                    <li><a href="selaminsaat.html">Selam İnşaat</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="projelerim-main">
+            <section id="projelerim-section">
+                <h2>Projelerim</h2>
+                <div class="sorting-container">
+                    <button id="show-all-button">Tüm Projeler</button>
+                    <button id="show-latest-button">En Son Eklenenler</button>
+                    <button id="show-popular-button">En Beğenilenler</button>
+                </div>
+
+                <div id="project-cards-container">
+                    <div class="project-card" data-date="2023-11-01" data-likes="120" onclick="openModal('proje1')">
+                        <h3>Library Management App</h3>
+                        <img src="resimler/Proje-1.jpg" alt="Proje 1">
+                        <h4>Projede kütüphane yönetim sistemi tasarlandı.</h4>
+                    </div>
+                    <div class="project-card" data-date="2023-10-20" data-likes="85" onclick="openModal('proje2')">
+                        <h3>Medical Store App</h3>
+                        <img src="resimler/Proje-2.jpg" alt="Proje 2">
+                        <h4>Bir eczane yönetim uygulaması geliştirilmiştir.</h4>
+                    </div>
+                    <div class="project-card" data-date="2023-11-05" data-likes="95" onclick="openModal('proje3')">
+                        <h3>Vehicle Log App</h3>
+                        <img src="resimler/Proje-3.jpg" alt="Proje 3">
+                        <h4>Araç takip ve yönetim uygulaması yapılmıştır.</h4>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div id="projectModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="modal-title"></h2> 
+                <img id="modal-image" src="" alt="Büyük Proje Resmi">
+                <p id="modal-description"></p>
+            </div>
+        </div>
+
+        <script src="js/fonksiyon.js"></script>
+    </body>
+</html>
