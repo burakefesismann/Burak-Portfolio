@@ -783,20 +783,3 @@ footer#selam-insaat p {
         width: 80%;
     }
 }
-
-@media only screen and (max-width: 375px) {
-}
-
-@media only screen and (max-width: 414px) {
-}
-
-body {
-    margin: 0 10px; 
-    padding: 0;
-}
-
-
-#main-container, .wrapper {
-    margin: 0 auto;
-    max-width: 95%;
-}
